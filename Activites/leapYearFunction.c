@@ -19,17 +19,20 @@
 #include <assert.h>
 
 #define GREGORIAN_CALENDAR 1582
+#define True               1
+#define False              0
+
+int isLeapYear(int year);
 
 int main(int argc, char *argv[]){
 
   int year;
-  int isLeapYear(int year);
 
   printf("enter the year you wish to test:\n");
-  
+
   scanf("%d", &year);
 
-  if(isLeapYear(year) == 1) {
+  if(isLeapYear(year)) {
 
     printf("is a leap year\n");
 
@@ -45,13 +48,13 @@ int main(int argc, char *argv[]){
 
 int isLeapYear(int year){
 
-  int counter = 0;
+  int leapYear = False;
 
   assert ( year >= GREGORIAN_CALENDAR );
 
   if((year % 400) == 0){
 
-    counter++;
+    leapYear = True;
 
   }
 
@@ -61,7 +64,7 @@ int isLeapYear(int year){
 
       if((year % 100) != 0){
 
-        counter++;
+        leapYear = False;
 
       }
 
@@ -69,6 +72,6 @@ int isLeapYear(int year){
 
   }
 
-  return counter;
+  return leapYear;
 
 }

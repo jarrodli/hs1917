@@ -1,0 +1,48 @@
+int *module = malloc(6)
+
+sorry
+
+this week went pretty fast, like I swear I only left SYD yesterday.. anyway so this week I learn't a bit of stuff, 
+
+module[0] = timemanagement
+
+and so it continues, being overseas on a holiday, yeah ikr whos smart idea was it to go on a holiday when exams are next term and i've got this course going on? not mine that's for sure :// anyway can't complain when the food is just amazing.. Anyway so this week hasn't been as hard as most weeks to get through mostly because Mirela and Stan are freaking amazing, more on that later... alAS my activites have been completed on time and lectures watched, tick! soooooo what much else is there to say? well I'm writing this on a train to Paris wow yeah Milano -> Paris 7 long hours damn.. just about enough time to study for SDD, lol no, who could bother to do that anyway...
+
+module[1] = teamwork
+
+FRICK so here's the part that's not so good, Mirela and Stan did ALoT of work this week, granted I have barely any free time but no excuses hey! I'll try to contribute as much as I can to the colour set of the project because Mirela bascially finished the thing, when I went to look at it I was like wow what. ANywaY the team's amazing, I'll have to pull twice my weight in the next project to make up for it, after all I owe them one hey! ;))
+
+module[2] = artisanship
+
+this one's gonna be big.
+
+just because of the resume submission being due soon ;)))
+
+WEll so I'm just gonna talk about some things I did to make my code look yummy! Let's start with reverse.c because the other two I didn't have much of a go in this week.. Actually you know what let's include the mandelbrot escape steps because last week I didn't talk about it as much as I could! 
+
+so here it is.
+
+c.esrever
+
+oh this one was quite short, nevertheless as usual we move forward! With it I've stuck to the C style guide as much as possible, as with any code that I write. I went ahead and placed comments quite liberally to allow easy understanding of what I'm doing for others, sometimes for myself, you know how it works, make the code and it takes twice as long to understand what you did... umm I made my algorithm as short as I could, swapping two letters @ once, so I took the first letter placed it in a temp variable and then placed that one at the end of the array and so on. I've placed most of my variables definitons at the start of the function, however I placed one in the middle. Why might you ask, well it seems like it's retains readability and shortens the code a bit, so what's the harm right? I don't however have garbage collection, freeing my malloced memory, it wouldn't work otherwise i'm sure of it... Here's some jucy pics to make your mouth water, it prbs won't actually water but ye:
+
+next up -> escapeSteps.c (rerun sorry) 
+
+this one was quite nice, I worked well with Mirela and Stan to make something of art, even if it didn't bloody work the first time. thanks again matt... We used a struct to hold the imaginary and real parts of the number, it was the most stylish thing you could do to the program. yeah that's it, here's a ss of the struct because the rest of the program is basically useless for this:
+
+lastly let's have some extra bits that wern't technically part of what I had to do but did it anyway..
+
+BeEFore I went ahead and tried to program the mandelbrot.c myself (sorry team), I went ahead and did some cool things that helped aLOT, future kiddies if you're look at this, you'll find it easy to write TASK2B if you do some things first. 
+
+the very first thing I did: make a flag of the mandelbrot set. One that opens up in console. I won't spoil how to do it just incase but think danishflag. I've placed all my hashtagdefines at the beginning together and made my prog as readable as possible. A few of these things include, more comments yes, um some breakup of the thing in functions and semi-understandable, not too long variables.
+
+next I made the flag print to a webbrowser, so serve the html to a browser. no spoilers but break the transmission up. For this one I placed a how it works at the beginning with a nice banner:
+
+I've also used arrays to hold stuff, like they could be used for so many thing right? Again I try to make vars easy to read but like sometimes they're confusing, sorry :((( I think the hard part here is to make it work on windows, you have to use the winsock2 things and stuff it should be the same but in practise for me it was a bit harder. I'll dedicate the end of this to some delicious style:
+
+OH BUGGER I FORGOT TO ADD TO THIS WEEKS NOTES FRICK BETTER DO THAT WHEN I GET BACK TO THE HOTEL!!!!! sorry, i'll leave this here just because I'm annoyed I forgot about that. 
+
+and because when I write these blogs I don't have everything planned out and neat, whatever comes to my mind is what goes on here. Like it or hate it, this won't change <3
+
+bye xoxo
+

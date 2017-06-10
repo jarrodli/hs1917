@@ -1,0 +1,24 @@
+TutLab: Array Overflowing
+Jarrod Li
+05 April 2017
+
+The canary variables are stored on my local PC in the memory address
+locations as follows:
+
+The memory address of canaryA is: 0061FF2C
+The memory address of canaryB is: 0061FF00
+
+GCC stores variables that are declared first at a higher memory address than the one that succeds
+itself. For example:
+
+Canary A is stored at 2C which is at a higher location in memory than Canary B 00.
+
+The location of the variables does not change when I recompile or re-run my program.
+
+In theory the -O flag should move my variables around to optimise the program, however
+in practise it has no effect.
+
+Overflow - When overflowing the array by one, it prints the variable canaryA. Therefore index 0 in
+the array is at a lower memory address than index 9. When underflowing the array by 1, it prints
+the variable canaryB. This proves the assumption that variables are placed together and move from
+high memory address to low.

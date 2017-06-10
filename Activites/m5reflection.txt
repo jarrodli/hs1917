@@ -1,0 +1,28 @@
+
+typedef struct _module5{ char timeManagement; char teamwork; char artisanship;}module5;
+
+oops 
+
+putting everything together last minute but it's really nice weather out here in Rome ;))) In this week's lectures I've reviewed some
+new c syntax being: structs and typedefs, which were quite useful for the escape steps function! Flow control was revisited and the concept
+that all programming algorithms can be executed with iteration, flow control and functions was quite cool! ALoT of this weeks lectures were based around the next major task (mandelbrot or task 2B) and some cool stuff on how to write to files (or to sockets for the task) and how colours can be written to a pixel based on the escape steps function was quite useful indeed.. 
+
+module5 timeManagement = {
+	
+again with this week, just like last week, I'm not as infront of my activities as I would like, however, considering that I'm out most of the day and the flight from SYD to DOHA to ROME was quite long (it's not that easy to focus 30,000ft in the air), I'm not unhappy with at least completing my activities. I'll try my best to stay on top of everything and keep up with the rest of the cohort. Right now I'm just staying up a bit later than everyone else to work through the activities, on top of revising for semester exams that are fast approacting ew.
+
+}
+
+module5 teamwork = {
+	
+in this module, Stan, Mirela and myself took an afternoon (and part of the evening) off to complete the mandelbrot escape steps task. We used c9.io again!!! because it was so useful to watch what people were explaining. Even though we didn't get it completed on the night, freaking screwed up the complex numbers function to multiply oops, it was a nice experience and collab work is always the best type of work.
+
+}
+
+module5 artisanship = {
+
+not much to say here as a large step up from last week, still doing all the usual and trying ot make my code easy to read and as BEAU-T-FUL as possible. Going to possible look into breaking up some parts of my chessboard.c code into other functions because my main is just too long sorry! This is when I get the time to ofc!	
+
+}
+
+- cya
