@@ -1,0 +1,93 @@
+[New Thread 8308.0x2e18]
+[New Thread 8308.0x3bc]
+ 1. words.
+ 2. into
+ 3. broken
+ 4. be
+ 5. to
+ 6. line
+ 7. sample
+ 8. a
+ 9. is
+10. this
+11. (null)
+12. 1█v¯u
+03. ëE³âtTdï
+14. ½½½½½½½½
+15. ½½½½½½½½RTL: RtlNtStatusToDosError(0x%lx): No Valid Win32 Error Mapping
+
+
+Program received signal SIGSEGV, Segmentation fault.
+0x764cb332 in vswprintf () from C:\WINDOWS\SysWOW64\msvcrt.dll
+
+#0  0x764cb332 in vswprintf ()
+   from C:\WINDOWS\SysWOW64\msvcrt.dll
+#1  0x764c4ba1 in printf () from C:\WINDOWS\SysWOW64\msvcrt.dll
+#2  0x76501020 in msvcrt!_iob ()
+   from C:\WINDOWS\SysWOW64\msvcrt.dll
+#3  0x0040b064 in __register_frame_info ()
+#4  0x00401687 in print_words (words=0x61fd90) at words.c:97
+#5  0x00401532 in main () at words.c:41		
+
+#4  0x00401687 in print_words (words=0x61fd90) at words.c:97
+97          printf("%2d. %s\n", k+1, words[k]);
+
+(gdb) p words[0]
+$1 = 0x6c2f78 "words."
+(gdb) p words[1]
+$2 = 0x6c2f73 "into"
+(gdb) p words[2]
+$3 = 0x6c2f6c "broken"
+(gdb) p words[3]
+$4 = 0x6c2f69 "be"
+(gdb) p words[4]
+$5 = 0x6c2f61 "to"
+(gdb) p words[5]
+$6 = 0x6c2f5c "line"
+(gdb) p words[6]
+$7 = 0x6c2f54 "sample"
+(gdb) p words[7]
+$8 = 0x6c2f52 "a"
+(gdb) p words[8]
+$9 = 0x6c2f4f "is"
+(gdb) p words[9]
+$10 = 0x6c2f48 "this"
+
+(gdb) list
+92      {
+93        int k;
+94
+95        k = 0;
+96        while( words[k] != 1) {
+97          printf("%2d. %s\n", k+1, words[k]);
+98          k++;
+99        }
+100     }
+(gdb)
+
+(gdb) break reverse_words
+Breakpoint 1 at 0x4015e2: file words.c, line 80.
+
+#0  reverse_words (words=0x61fe5c, rwords=0x61fd90, count=10)
+    at words.c:80
+#1  0x00401526 in main () at words.c:39
+
+(gdb) info locals
+j = 4199104
+
+Stack level 0, frame at 0x61fd80:
+ eip = 0x4015e2 in reverse_words (words.c:80);
+    saved eip 0x401526
+ called by frame at 0x61ff40
+ source language c.
+ Arglist at 0x61fd78, args: words=0x61fe5c, rwords=0x61fd90,
+    count=10
+ Locals at 0x61fd78, Previous frame's sp is 0x61fd80
+ Saved registers:
+  ebp at 0x61fd78, eip at 0x61fd7c
+(gdb)
+
+(gdb) step
+82        for( j = 0; words[j] != '\0'; j++ ) {
+(gdb) next
+83          rwords[j] = words[count-j-1];
